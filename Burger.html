@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>BURGER SUPER SMASH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Londrina+Shadow&display=swap" rel="stylesheet">
+     <style>
+    body {
+      margin: 0;
+      .londrina-shadow-regular {
+  font-family: "Londrina Shadow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+    }
+
+    .hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to top,rgba(143, 8, 8, 0.734), rgb(255, 98, 0));
+  color: white;
+  font-size: clamp (2rem,8vw,5rem);
+   
+   
+   }
+
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; /* espace entre les colonnes */
+  align-items: center;
+  
+}
+
+.left-column {
+  h1,h5 {margin: 0;}      
+  width:auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 4vw;
+  line-height: 0.9;
+ 
+  }
+ 
+
+.right-column img {
+  width:auto;
+  height: auto;
+}
+
+      
+
+        .map-section {
+            flex-direction: column;
+            background: #d16224;
+            color: white;
+        }
+
+        .about-section {
+          flex-flow: row wrap; 
+          flex-direction: column;
+            background: #f6e3c4;
+            color: #000;
+        }
+
+        .item {
+            margin: 10px;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero-section">
+  <div class="hero-content">
+    <div class="left-column">
+      <h1>BURGER</h1>
+      <h1>SUPER</h1>
+      <h1>SMASH</h1>
+      <h5>The best burger...for sure !</h5>
+    </div>
+    <div class="right-column">
+      <img src="burger1.jpg" alt="Burger Super Smash">
+    </div>
+  </div>
+</section>
+
+
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h2>Rendez-vous au Capitole</h2>
+        <img src="Group" alt="Group">
+        <img src="Group_2" alt="Group 2">
+        <img src="Group_3" alt="Group 3">
+    </section>
+
+    <section class="about-section">
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut vulputate massa, sit amet tincidunt augue.</p>
+            <h3>BURGER SUPER SMASH</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut vulputate massa, sit amet tincidunt augue.</p>
+        </div>
+    </section>
+  
+
+    
+
+</body>
+</html>
