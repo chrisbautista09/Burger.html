@@ -9,110 +9,251 @@
      <style>
     body {
       margin: 0;
+      padding: 0;
+    }  
       .londrina-shadow-regular {
-  font-family: "Londrina Shadow", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+               font-family: "Londrina Shadow", sans-serif;
+               font-weight: 400;
+               font-style: normal;
 
-    }
+      }
+    
+       
 
-    .hero-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-image: linear-gradient(to top,rgba(143, 8, 8, 0.734), rgb(255, 98, 0));
-  color: white;
-  font-size: clamp (2rem,8vw,5rem);
-   
-   
-   }
-
-
-.hero-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px; /* espace entre les colonnes */
-  align-items: center;
+            .hero-section {
   
-}
+             height: 100vh;
+             background-image: linear-gradient(to top,rgba(143, 8, 8, 0.734), rgb(255, 98, 0));
+             color: white;
+             font-size: clamp (2rem,8vw,5rem);
 
-.left-column {
-  h1,h5 {margin: 0;}      
-  width:auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  font-size: 4vw;
-  line-height: 0.9;
+
+            } 
+              .hero-content {
+                display: flex;
+                align-content: center;
+               
+              }  
+   
+                .left-column {
+
+                      margin: 0;
+                      display: flex;
+                      align-items: flex-start;    
+                      width:auto;
+                      height: auto;
+                      display: flex;
+                      flex-direction: column;
+                      text-align: left;
+                      font-size: 4.0vw;
+                      line-height: 1.2;
+                      justify-content: flex-start;
+                }
+                      .left-column h1,
+                      .left-column h5 {
+                         margin: 0;
+                         padding-left: 50px;
+                         display: block;
+                         text-align: left;
+                      }
+
+                      .left-column .imgtop {
+                         padding-top: 0;
+                         margin-top: -25px;
+                         display: block;
+                      }
  
-  }
+               
  
 
-.right-column img {
-  width:auto;
-  height: auto;
-}
+              .right-column  {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction:column;
+  
+
+              } 
+                .right-column .burger {
+                         align-items: center;
+                         width: 600px;
+                         z-index: 2;
+
+                        }
+
+                       .right-column .couche {
+                         position: absolute;
+                         bottom: 70px;
+                         right: 80px;
+                         z-index:  1;
+                         opacity: 1.5;
+                         transform : rotate(310deg);
+                         align-items :self-end
+                         width: 30%;
+                         display: block;
+                        }
+               
+               
+            
+      
 
       
 
         .map-section {
-            flex-direction: column;
+            
+            height: 100vh;
+            
+            display: flex;
             background: #d16224;
             color: white;
-        }
-
-        .about-section {
-          flex-flow: row wrap; 
-          flex-direction: column;
-            background: #f6e3c4;
-            color: #000;
-        }
-
-        .item {
-            margin: 10px;
-        }
-
-        img {
-            width: 200px;
-            height: auto;
+            flex-direction:  column;
+            align-items: center;
+            justify-content: center;          
             
         }
+        .iframe {
+           
+           max-width: 600px;
+           height: 800px;
+           border: 500;
+           
+           
+        }  
+        
+        .map-section h5 {
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 50;
+            font-size: 3vw;
+          }
+
+          .map-section h2 {
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-size: 7vw;
+          }
+           
+
+         .imagealignes {
+          
+          display: flex;
+          flex-wrap: wrap;
+          justify-content:center;
+          gap: 40px;
+          margin-top: auto;
+          margin-bottom: auto;
+         }
+
+          .imagealignes img {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-bottom: 40;
+          }
+          
+
+          
+          
+          
+          
+          
+
+        .about-section {
+          height: 100vh;
+          background: #f6e3c4;
+          color: #000;
+          
+         
+
+        }  
+          .about-section .colonnes { 
+          
+          flex-wrap: wrap;
+          flex-direction: column;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          align-items: center;
+          gap: 30px;
+          margin-left: 30px;
+
+          
+        }
+
+        .about-section .colonne1 {
+          font-size: 4.3vw;
+          height: auto;
+          width: auto;
+        }
+
+        .about-section .colonne2 {
+          font-size: 6.4vw;
+          height: auto;
+          width: auto;
+          margin-top: 0px;
+          
+          flex-direction: column;
+          
+        }
+
+        .about-section .colonne3 {
+          font-size: 4.3vw;
+          height: auto;
+          width: auto;
+        }
+
+        
+    
     </style>
 </head>
 
 <body>
 
     <section class="hero-section">
-  <div class="hero-content">
-    <div class="left-column">
+     <div class= "hero-content">
+  
+     <div class="left-column">
+      <img src="ognion.png"  alt="ognion" class="imgtop">
       <h1>BURGER</h1>
       <h1>SUPER</h1>
       <h1>SMASH</h1>
       <h5>The best burger...for sure !</h5>
+     </div>
+     <div class="right-column">
+            <img src="burger1.jpg" alt="Burger Super Smash" class="burger">
+            <img src="ognion.png"  alt="ognion" class="couche">
+      
+     </div>
     </div>
-    <div class="right-column">
-      <img src="burger1.jpg" alt="Burger Super Smash">
-    </div>
-  </div>
-</section>
+    </section>
 
 
     <section class="map-section">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <h5>The best burger ... for sure !</h5>
         <h2>Rendez-vous au Capitole</h2>
-        <img src="Group" alt="Group">
-        <img src="Group_2" alt="Group 2">
-        <img src="Group_3" alt="Group 3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18..."width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+        
+        <div class= "imagealignes">
+          <img src="Group.webp" alt="Group">
+          <img src="Group_2.webp" alt="Group 2">
+          <img src="Group_3.webp" alt="Group 3">
+        </div>
     </section>
 
     <section class="about-section">
-        <div>
+        <div class= "colonnes">
+          <div class="colonne1">  
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut vulputate massa, sit amet tincidunt augue.</p>
+          </div>
+          <div class="colonne2">
+            <h3>BURGER</h3>
+            <h3>SUPER</h3>
+            <h3>SMASH</h3>
+          </div> 
+          <div class="colonne3"> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut vulputate massa, sit amet tincidunt augue.</p>
-            <h3>BURGER SUPER SMASH</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut vulputate massa, sit amet tincidunt augue.</p>
+          </div>  
         </div>
     </section>
   
@@ -121,3 +262,4 @@
 
 </body>
 </html>
+
